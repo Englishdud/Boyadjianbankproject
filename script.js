@@ -10,7 +10,7 @@ function submit(){
     if(user == '510036554' && password == 'Aaron5454'){
         window.location.href = 'Aaronbank.html';
     }
-    if(user == 'k3E&58mDne' && password == '79838'){
+    if(user == 'k3Eq58mDne' && password == '79838'){
         window.location.href = 'Aadhilbank.html';
     }
     if(user == '$P!N6$BfyD' && password == '039414'){

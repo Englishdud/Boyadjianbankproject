@@ -14,11 +14,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Bank</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   <style>
+    body {
+      text-align: center;
+      background-image: linear-gradient(to bottom right, rgb(196, 241, 241), rgb(148, 233, 233));
+    }
+    #made {
+      margin-top: 60px;
+    }
+    .heroimage {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.229), rgba(0, 0, 0, 0.27)), url("school.jpeg");
+          height: 50%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          height: 100vh;
+        }
+        .herotext {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+        }
+   </style>
 </head>
 <body>
-    
+  <div class="heroimage">
+    <div class="herotext">
+      <h1 style="font-size: 60px;">B56B</h1>
+      <p style="font-size:20px;">We made this to help students learn about banking</p>
+      <button type="button" class="btn btn-dark"><a href="Login.html" style="text-decoration: none; color: white;">Take me to login</a></button>
+    </div>
+  </div>
+  <h6 id="made"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+  </svg> Made with love by: Aadhil, Aaron, Andrew</h6>
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
@@ -42,6 +77,7 @@
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
       </script> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 <script src="//cdn.jsdelivr.net/npm/faunadb@latest/dist/faunadb.js"></script>
 </html>
